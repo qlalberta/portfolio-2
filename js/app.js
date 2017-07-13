@@ -1,3 +1,4 @@
+<!-- TODO: MVC me -->
 'use strict';
 
  // TODO: js architecture

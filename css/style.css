@@ -2,3 +2,7 @@
 /*TODO: RWD me
 - implement grid
 */
+
+img {
+  max-width: 100%;
+}
