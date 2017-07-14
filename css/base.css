@@ -1,4 +1,6 @@
-/*TODO: SMACSS me*/
-/*TODO: RWD me
-- implement grid
-*/
+/*Default styles*/
+
+*{
+  background-color: #8E4A49;
+  color: #7daa92;
+}
