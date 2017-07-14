@@ -9,3 +9,7 @@ function content(title, image, text, url){
   this.text = text;
   this.url = url;
 }
+
+// TODO: Create a responsive primary nav
+// need hamburger bar
+// need li of nav items

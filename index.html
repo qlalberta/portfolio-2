@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title></title>
     <link href="css/style.css" type="text/css" rel="stylesheet" />
+    <link href="vendor/icon.css" type="text/css" rel="stylesheet" />
   </head>
   <body>
     <header>
@@ -11,20 +12,25 @@
       <img id="head-img" src="http://lorempixel.com/640/480/cats" />
       <hgroup>
           <h1>Name Here</h1>
-            <!-- TODO: social media links -->
           <nav id="icon-nav">
             <!-- TODO: Make icons -->
             <ul id="icon-list">
-              <li><a href="https://www.facebook.com/aeoneis">Facebook</a></li>
-              <li><a href="https://github.com/aeoneis">GitHub</a></li>
+              <li class="icon-item"><a href="https://www.facebook.com/aeoneis">Facebook</a></li>
+              <li class="icon-item"><a href="https://github.com/aeoneis">GitHub</a></li>
             </ul>
           </nav>
       </hgroup>
+      <nav id="primary-nav">
+        <div id="hamburger"><span class="icon-menu"></span></div>
+        <ul id="nav-list">
+          <li class="nav-item">About</li>
+          <li class="nav-item">Projects</li>
+          <li class="nav-item">Research</li>
+          <li class="nav-item">Volunteer</li>
+        </ul>
+      </nav>
     </header>
-    <nav id="primary-nav">
-      <ul>
-      </ul>
-    </nav>
+
     <script src="js/app.js"></script>
   </body>
 </html>

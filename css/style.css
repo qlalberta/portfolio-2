@@ -1,8 +1,23 @@
 /*TODO: SMACSS me*/
-/*TODO: RWD me
-- implement grid
-*/
 
 img {
   max-width: 100%;
+}
+
+.icon-item, .nav-item {
+  display: inline;
+}
+
+@media(min-width: 800px){
+  #hamburger{
+    /*display: none;*/
+  }
+
+  #nav-list{
+    display: block;
+  }
+
+  #nav-item{
+    display: inline-block;
+  }
 }
