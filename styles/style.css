@@ -1,0 +1,51 @@
+/*TODO: SMACSS me*/
+
+body{
+  width: 100%
+  margin: auto;
+}
+
+img {
+  max-width: 100%;
+}
+
+h1{
+  font-size: 4.5vw;
+}
+
+.nav-item {
+  display: block;
+}
+
+.icon-item{
+  display: inline;
+}
+
+#hamburger{
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+#nav-list{
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+/*desktop*/
+@media(min-width: 800px){
+  #hamburger{
+    display: none;
+  }
+
+  #nav-list{
+  position: relative;
+  }
+
+  .icon-item, .nav-item{
+    display: inline;
+  }
+}
