@@ -1,0 +1,80 @@
+/*Grid System: modeled after seattle-301d27 day 1 class demo code*/
+
+.row{
+  width: 100%;
+}
+
+.row,
+.column {
+  box-sizing: border-box;
+}
+
+.row::before,
+.row::after {
+  content:"";
+  display: table;
+}
+
+.row::after {
+  clear: both;
+}
+
+.column {
+  position: relative;
+  float: left;
+  padding: 1%;
+}
+
+[class*="col-"]{
+  width: 100%;
+}
+
+@media (min-width:960px) {
+  .col-1 {
+    width: 8.33%
+  }
+
+  .col-2 {
+    width: 16.66%
+  }
+
+  .col-3 {
+    width: 24.66%
+  }
+
+  .col-4 {
+    width: 33.33%
+  }
+
+  .col-5 {
+    width: 41.65%
+  }
+
+  .col-6 {
+    width: 50%
+  }
+
+  .col-7 {
+    width: 58.31%
+  }
+
+  .col-8 {
+    width: 66.64%
+  }
+
+  .col-9 {
+    width: 74.88%
+  }
+
+  .col-10 {
+    width: 83.3%
+  }
+
+  .col-11 {
+    width: 91.63%
+  }
+
+  .col-12 {
+    width: 100%
+  }
+}
