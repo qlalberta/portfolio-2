@@ -5,12 +5,12 @@ body{
   margin: auto;
 }
 
-h1{
-  font-size: 4.5vw;
-}
-
 img {
   max-width: 100%;
+}
+
+h1{
+  font-size: 4.5vw;
 }
 
 .nav-item {
