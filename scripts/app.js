@@ -9,14 +9,12 @@ function content(title, image, text, url){
   this.url = url;
 }
 
-// TODO: hide primary-nav in mobile mode and show when hamburger clicked
+// TODO: tweak this so it works like you want it to
 function toggleHamburger(){
-  if($('#hamburger')){
-    $('#hamburger').on('click', function(){
-      $('#nav-list').show();
-      $('#hamburger').hide();
-    });
-  }
+  $('#hamburger').on('click', function(){
+    $('#nav-list').show();
+    $('#hamburger').hide();
+  });
 }
 
 toggleHamburger();

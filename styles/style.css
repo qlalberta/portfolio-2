@@ -1,16 +1,13 @@
 /*TODO: SMACSS me*/
 
+/*overall*/
 body{
-  width: 100%
+  width: 100%;
   margin: auto;
 }
 
 img {
   max-width: 100%;
-}
-
-h1{
-  font-size: 4.5vw;
 }
 
 .nav-item {
@@ -21,11 +18,27 @@ h1{
   display: inline;
 }
 
+.center{
+  display: block;
+  margin: 0px auto;
+  padding-top: 0px;
+}
+
+.projects{
+  float: left;
+  width: 25%;
+}
+
+.project-name{
+  text-align: center;
+}
+
 #hamburger{
   display: block;
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
+  z-index: 20;
 }
 
 #nav-list{
@@ -42,7 +55,8 @@ h1{
   }
 
   #nav-list{
-  position: relative;
+    position: relative;
+    display: inline;
   }
 
   .icon-item, .nav-item{
