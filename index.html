@@ -11,13 +11,13 @@
   </head>
   <body>
     <header>
-      <!-- placeholder -->
-      <img class="center" id="head-img" src="http://lorempixel.com/960/300/cats" />
+      <img class="center col-4" id="head-img" src="http://lorempixel.com/960/300/cats" />
       <hgroup id="header-set">
-          <nav id="icon-nav">
-            <h1>Aeone Singson</h1>
+          <nav id="icon-nav" class="col-3">
             <!-- TODO: Make icons -->
             <ul id="icon-list">
+              <!-- TODO: figure out better way to inline this -->
+              <li class="icon-item" id="name">Aeone Singson</li>
               <li class="icon-item"><a href="https://github.com/aeoneis">GitHub</a></li>
               <li class="icon-item"><a href="https://www.linkedin.com/in/aeone/">LinkedIn</a></li>
               <li class="icon-item"><a href="https://www.facebook.com/aeoneis">Facebook</a></li>
@@ -26,19 +26,17 @@
       </hgroup>
       <nav id="primary-nav">
         <div class="icon-menu" id="hamburger"></div>
-        <div>
-          <ul id="nav-list">
-            <li class="nav-item">About</li>
-            <li class="nav-item">Projects</li>
-            <li class="nav-item">Research</li>
-            <li class="nav-item">Volunteer</li>
-          </ul>
-        </div>
+        <ul id="nav-list">
+          <li class="nav-item">About</li>
+          <li class="nav-item">Projects</li>
+          <li class="nav-item">Research</li>
+          <li class="nav-item">Volunteer</li>
+        </ul>
       </nav>
     </header>
-    <main>
-      <!-- DELETEME -->
-      <hr />
+    <!-- DELETEME -->
+    <hr />
+    <main class="center">
       <article class="projects col-2">
         <!-- TODO: make image more responsive -->
         <img class="project-image center"  src="http://lorempixel.com/200/200/cats" />

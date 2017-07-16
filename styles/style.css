@@ -1,21 +1,20 @@
 /*TODO: SMACSS me*/
 
-/*overall*/
+/*global*/
+
 body{
   width: 100%;
   margin: auto;
+  background-color: #7daa92;
+  color: #8e4a49;
 }
 
 img {
   max-width: 100%;
 }
 
-.nav-item {
-  display: block;
-}
-
-.icon-item{
-  display: inline;
+main {
+  padding: 15%;
 }
 
 .center{
@@ -24,14 +23,43 @@ img {
   padding-top: 0px;
 }
 
+/*module: header and nav*/
+.nav-item {
+  display: block;
+}
+
+.icon-item{
+  display: inline;
+}
+
+#name {
+  font-size: large;
+}
+
+#icon-nav{
+  margin: auto;
+  position: relative;
+  top: -20px;
+  text-align: center;
+  float: left;
+}
+
+/*dynamic: projects*/
 .projects{
   float: left;
   width: 25%;
 }
 
+.project-body{
+  margin: 5%;
+}
+
 .project-name{
   text-align: center;
+  margin-top: 5%;
 }
+
+/*state dependent*/
 
 #hamburger{
   display: block;
@@ -48,7 +76,7 @@ img {
   right: 0;
 }
 
-/*desktop*/
+/*desktop state*/
 @media(min-width: 800px){
   #hamburger{
     display: none;
