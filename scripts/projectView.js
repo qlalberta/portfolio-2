@@ -22,6 +22,7 @@ projectDataArray.forEach(function(projectDataObj){
   projects.push(new Project(projectDataObj));
 });
 
-projects.forEach(function(project){
-  $('#project').append(project.toHtml());
+projects.forEach(function(toRender){
+  console.log(projects.length);
+  $('#project-template').append(toRender.toHtml());
 });
