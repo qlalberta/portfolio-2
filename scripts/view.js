@@ -15,6 +15,14 @@ views.handleMainNav = function(){
   $('#main-nav .nav-item:first').click();
 };
 
+views.toggleHamburger = function(){
+  $('#hamburger').on('click', function(){
+    $('#nav-list').show();
+    $('#hamburger').hide();
+  });
+}
+
 $(function(){
   views.handleMainNav();
+  views.toggleHamburger();
 });

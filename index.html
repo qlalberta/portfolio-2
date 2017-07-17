@@ -51,14 +51,17 @@
       <section id="about" class="content">
         About MEEE!
       </section>
-      <script type="text/x-handlebars-template" id="handlebarsTemplate">
-        <section id="volunteer" class="content">
-          <article class="volunteer">
-            <h3 class="volunteer-title"></h3>
-            <section class="volunteer-body"></section>
-          </article>
-        </section>
+      <section id="volunteer" class="content">
+        <script type="text/x-handlebars-template" id="handlebarsTemplate">
+            <article class="volunteer">
+              <h2 class="volunteer-orgName">{{orgName}}</h2>
+              <h3 class="volunteer-role">{{role}}</h3>
+              <section class="volunteer-body">{{{body}}}</section>
+              <!-- DELETEME -->
+              <hr />
+            </article>
       </script>
+    </section>
       <section id="research" class="content">
         Some research projects here
       </section>
@@ -67,6 +70,7 @@
       src="https://code.jquery.com/jquery-3.2.1.min.js"
       integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
       crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
     <script src="scripts/data.js"></script>
     <script src="scripts/project.js"></script>
     <script src="scripts/volunteer.js"></script>
