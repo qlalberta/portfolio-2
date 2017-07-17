@@ -1,0 +1,25 @@
+body{
+  width: 100%;
+  margin: auto;
+  background-color: black;
+  color: #5f464b;
+}
+
+img {
+  max-width: 100%;
+}
+
+main {
+  padding: 15%;
+}
+
+.center{
+  display: block;
+  margin: 0px auto;
+  padding-top: 0px;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
