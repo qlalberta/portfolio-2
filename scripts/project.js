@@ -12,11 +12,11 @@ function Project(projectData){
 }
 
 Project.prototype.toHtml = function (){
-  var $newProject = $('article.project').clone();
+  var $newProject = $('article.project-template').clone();
+  $newProject.attr('class','project');
   $newProject.find('.project-title').text(this.title);
   $newProject.find('.project-image').attr('src', this.image);
   $newProject.find('.project-body').html(this.body);
-
   return $newProject;
 }
 
