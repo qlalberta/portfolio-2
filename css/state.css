@@ -1,18 +1,5 @@
 /*describes how modules or layouts looks*/
 
-body{
-  width: 100%
-  margin: auto;
-}
-
-h1{
-  font-size: 4.5vw;
-}
-
-img {
-  max-width: 100%;
-}
-
 .nav-item {
   display: block;
 }
@@ -35,14 +22,40 @@ img {
   right: 0;
 }
 
+/*reusable modular parts of the design*/
 /*desktop*/
-@media(min-width: 960px){
+
+@media (min-width:960px) {
+  .col-1 {
+    width: 16.67%
+  }
+
+  .col-2 {
+    width: 33.33%
+  }
+
+  .col-3 {
+    width: 50%
+  }
+
+  .col-4 {
+    width: 66%
+  }
+
+  .col-5 {
+    width: 75%
+  }
+
+  .col-6 {
+    width: 100%
+  }
+
   #hamburger{
     display: none;
   }
 
   #nav-list{
-  position: relative;
+    position: relative;
   }
 
   .icon-item, .nav-item{
