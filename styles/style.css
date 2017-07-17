@@ -2,92 +2,18 @@
 
 /*global*/
 
-body{
-  width: 100%;
-  margin: auto;
-  background-color: #7daa92;
-  color: #8e4a49;
-}
 
-img {
-  max-width: 100%;
-}
 
-main {
-  padding: 15%;
-}
 
-.center{
-  display: block;
-  margin: 0px auto;
-  padding-top: 0px;
-}
 
 /*module: header and nav*/
-.nav-item {
-  display: block;
-}
 
-.icon-item{
-  display: inline;
-}
-
-#name {
-  font-size: large;
-}
-
-#icon-nav{
-  margin: auto;
-  position: relative;
-  top: -20px;
-  text-align: center;
-  float: left;
-}
 
 /*dynamic: projects*/
-.projects{
-  float: left;
-  width: 25%;
-}
 
-.project-body{
-  margin: 5%;
-}
-
-.project-title{
-  text-align: center;
-  margin-top: 5%;
-}
 
 /*state dependent*/
 
-#hamburger{
-  display: block;
-  position: fixed;
-  top: 0;
-  right: 0;
-  z-index: 20;
-}
 
-#nav-list{
-  display: none;
-  position: absolute;
-  top: 0;
-  right: 0;
-}
 
 /*desktop state*/
-@media(min-width: 800px){
-  #hamburger{
-    display: none;
-  }
-
-  #nav-list{
-    position: relative;
-    display: inline;
-  }
-
-  .icon-item, .nav-item{
-    display: inline;
-  }
-}

@@ -1,0 +1,20 @@
+body{
+  width: 100%;
+  margin: auto;
+  background-color: #7daa92;
+  color: #8e4a49;
+}
+
+img {
+  max-width: 100%;
+}
+
+main {
+  padding: 15%;
+}
+
+.center{
+  display: block;
+  margin: 0px auto;
+  padding-top: 0px;
+}
