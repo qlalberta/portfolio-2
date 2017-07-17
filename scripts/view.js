@@ -1,8 +1,8 @@
 'use-strict';
 
-var projectView = {};
+var views = {};
 
-projectView.handleMainNav = function(){
+views.handleMainNav = function(){
   // click on nav-item hides other content
   $('#main-nav').find('li').on('click', function(){
     $('.content').hide();
@@ -16,5 +16,5 @@ projectView.handleMainNav = function(){
 };
 
 $(function(){
-  projectView.handleMainNav();
+  views.handleMainNav();
 });

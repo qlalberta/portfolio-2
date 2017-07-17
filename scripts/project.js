@@ -1,5 +1,7 @@
 'use strict';
 
+// class-03 jQuery goodness here
+
 var projects = [];
 
 // TODO: js architecture
