@@ -1,27 +1,20 @@
-'use strict';
+'use-strict';
 
-var projects = [];
+var projectView = {};
 
-// TODO: js architecture
-function Project(projectData){
-  this.title = projectData.title;
-  this.image = projectData.image;
-  this.body = projectData.body;
-}
+projectView.handleMainNav = function(){
+  // click on nav-item hides other content
+  $('#main-nav').find('li').on('click', function(){
+    $('.content').hide();
+  // reveals only nav-item clicked
+    var selected = $(this).attr('data-content');
+    // dynamically build selector with correct ID based on data
+    $('section[id="' + selected + '"]').show();
+  });
+  // autoclick about on load
+  $('#main-nav .nav-item:first').click();
+};
 
-Project.prototype.toHtml = function (){
-  var $newProject = $('article.project').clone();
-  $newProject.find('.project-title').text(this.title);
-  $newProject.find('.project-image').attr('src', this.image);
-  $newProject.find('.project-body').html(this.body);
-
-  return $newProject;
-}
-
-projectDataArray.forEach(function(projectDataObj){
-  projects.push(new Project(projectDataObj));
-});
-
-projects.forEach(function(toRender){
-  $('#project-template').append(toRender.toHtml());
+$(function(){
+  projectView.handleMainNav();
 });
