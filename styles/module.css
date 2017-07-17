@@ -1,4 +1,4 @@
-
+/*TODO: figure out how to make fonts resizable*/
 
 .nav-item {
   display: block;
@@ -9,11 +9,12 @@
 }
 
 #name {
-  font-size: large;
+  font-size: 48px;
+  color: #80ffec;
 }
 
 #icon-nav{
-  background-color: #7daa92;
+  background-color: #8e4a49;
   margin: auto;
   position: relative;
   top: -20px;
@@ -27,6 +28,7 @@
   top: 0;
   right: 0;
   z-index: 20;
+  color: #7daa92;
 }
 
 #nav-list{
@@ -34,20 +36,25 @@
   position: absolute;
   top: 0;
   right: 0;
+  color: #7daa92;
 }
 
 .projects{
   float: left;
   width: 25%;
+
 }
 
 .project-body{
   margin: 5%;
+  color: #7daa92;
 }
 
 .project-title{
   text-align: center;
   margin-top: 5%;
+  color: #8e4a49;
+  font-size: 30px;
 }
 
 
