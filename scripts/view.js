@@ -1,8 +1,8 @@
 'use-strict';
 
-var projectView = {};
+var views = {};
 
-projectView.handleMainNav = function(){
+views.handleMainNav = function(){
   // click on nav-item hides other content
   $('#main-nav').find('li').on('click', function(){
     $('.content').hide();
@@ -15,6 +15,14 @@ projectView.handleMainNav = function(){
   $('#main-nav .nav-item:first').click();
 };
 
+views.toggleHamburger = function(){
+  $('#hamburger').on('click', function(){
+    $('#nav-list').show();
+    $('#hamburger').hide();
+  });
+}
+
 $(function(){
-  projectView.handleMainNav();
+  views.handleMainNav();
+  views.toggleHamburger();
 });
