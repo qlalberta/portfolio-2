@@ -1,1 +1,15 @@
 /*reusable modular parts of the design*/
+/*desktop*/
+@media(min-width: 960px){
+  #hamburger{
+    display: none;
+  }
+
+  #nav-list{
+  position: relative;
+  }
+
+  .icon-item, .nav-item{
+    display: inline;
+  }
+}
