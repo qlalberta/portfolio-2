@@ -13,11 +13,12 @@
 }
 
 #icon-nav{
+  background-color: #7daa92;
   margin: auto;
   position: relative;
   top: -20px;
   text-align: center;
-  float: left;
+  float: center;
 }
 
 #hamburger{
