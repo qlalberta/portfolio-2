@@ -20,6 +20,8 @@ Project.prototype.toHtml = function (){
   return $newProject;
 }
 
+// TODO: fetchAll
+
 projectDataArray.forEach(function(projectDataObj){
   projects.push(new Project(projectDataObj));
 });

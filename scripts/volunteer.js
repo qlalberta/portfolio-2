@@ -12,8 +12,8 @@ function Volunteer (volunteerData){
 
 Volunteer.prototype.toHtml = function(){
   var handlebarsTemplateString = $('#handlebarsTemplate').html();
-  var compiledArticle = Handlebars.compile(handlebarsTemplateString);
-  return compiledArticle(this);
+  var compiledVolunteerData = Handlebars.compile(handlebarsTemplateString);
+  return compiledVolunteerData(this);
 }
 
 volunteerDataArray.forEach(function(volunteerDataObj){
