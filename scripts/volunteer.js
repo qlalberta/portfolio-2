@@ -1,8 +1,6 @@
 'use strict';
 
-// class-04 handlebars goodness here
-
-var volunteerInfo = [];
+// references Code Fellows 301 Day-06 lecture code
 
 function Volunteer (volunteerData){
   this.orgName = volunteerData.orgName;
@@ -10,16 +8,32 @@ function Volunteer (volunteerData){
   this.body = volunteerData.body;
 }
 
+Volunteer.all = [];
+
 Volunteer.prototype.toHtml = function(){
   var handlebarsTemplateString = $('#handlebarsTemplate').html();
-  var compiledArticle = Handlebars.compile(handlebarsTemplateString);
-  return compiledArticle(this);
+  let compiledVolunteerData = Handlebars.compile(handlebarsTemplateString);
+  return compiledVolunteerData(this);
 }
 
-volunteerDataArray.forEach(function(volunteerDataObj){
-  volunteerInfo.push(new Volunteer(volunteerDataObj));
-});
+Volunteer.loadAll = function(volunteerData){
+  volunteerData.forEach(function(el){
+    Volunteer.all.push(new Volunteer(el))
+  });
+}
 
-volunteerInfo.forEach(function(org){
-  $('#volunteer').append(org.toHtml());
-});
+// TODO: can maybe fix by un-global views but how. 
+Volunteer.fetchAll = function () {
+  if(localStorage.rawData){
+    Volunteer.loadAll(JSON.parse(localStorage.rawData));
+    views.render();
+  } else {
+    $.getJSON('/data/volunteerData.json').then(function(volunteerData){
+      localStorage.rawData = JSON.stringify(volunteerData);
+      Volunteer.loadAll(JSON.parse(localStorage.rawData));
+      views.render();
+    } , function(err){
+      console.error(err);
+    }
+  )}
+}

@@ -1,5 +1,6 @@
 'use-strict';
 
+// TODO: fig out how to un-global somehow
 var views = {};
 
 views.handleMainNav = function(){
@@ -19,6 +20,12 @@ views.toggleHamburger = function(){
   $('#hamburger').on('click', function(){
     $('#nav-list').show();
     $('#hamburger').hide();
+  });
+}
+
+views.render = function(){
+  Volunteer.all.forEach(function(volunteerDataObj){
+    $('#volunteer').append(volunteerDataObj.toHtml());
   });
 }
 
