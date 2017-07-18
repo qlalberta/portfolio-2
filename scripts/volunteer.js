@@ -17,18 +17,23 @@ Volunteer.prototype.toHtml = function(){
 }
 
 Volunteer.loadAll = function(volunteerData){
-  volunteerData.forEach(function(el){Volunteer.all.push(new Volunteer(el))});
+  volunteerData.forEach(function(el){
+    Volunteer.all.push(new Volunteer(el))
+  });
 }
 
+// TODO: can maybe fix by un-global views but how. 
 Volunteer.fetchAll = function () {
   if(localStorage.rawData){
     Volunteer.loadAll(JSON.parse(localStorage.rawData));
-    // TODO: maybe a view thing here to init
+    views.render();
   } else {
     $.getJSON('/data/volunteerData.json').then(function(volunteerData){
       localStorage.rawData = JSON.stringify(volunteerData);
-      Volunteer.loadAll(volunteerData);
-      // TODO: viewthing?
-    })
-  }
+      Volunteer.loadAll(JSON.parse(localStorage.rawData));
+      views.render();
+    } , function(err){
+      console.error(err);
+    }
+  )}
 }
