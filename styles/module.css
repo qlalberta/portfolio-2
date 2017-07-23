@@ -57,6 +57,9 @@
   font-size: 30px;
 }
 
+a {
+  color: white;
+}
 
 
 @media(min-width: 800px){
